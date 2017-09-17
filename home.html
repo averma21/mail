@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search</title>
+    <script src="static/scripts/jquery-3.2.1.slim.min.js"></script>
+    <script src="static/scripts/popper.min.js"></script>
+    <script src="static/scripts/bootstrap.min.js"></script>
+    <script src="static/scripts/custom.js"></script>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/custom.css">
+    <link rel="stylesheet" href="static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <head>
+  <body class="search-bg">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">Search</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="topNav">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link active" href="#/web" data-search-type="web">Web <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#/images" data-search-type="images">Images</a>
+          <a class="nav-item nav-link" href="#/videos" data-search-type="videos">Videos</a>
+        </div>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#">Login/Register</a>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid search-box-container">
+      <div class="row">
+        <div class="col-md-1 search-logo-box">
+        </div>
+        <div class="col-md-6">
+          <div class="input-group input-group-lg">
+            <div class="input-group-btn btn-group">
+              <button type="button" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Bing
+              </button>
+              <div class="dropdown-menu search-engine-selector">
+                <a class="dropdown-item" href="#">Bing</a>
+                <a class="dropdown-item" href="#">Google</a>
+                <a class="dropdown-item" href="#">Yahoo!</a>
+              </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Search" aria-label="Search" id="search-box">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-primary search-btn btn-lg"><i class="fa fa-search fa-2x"></i></button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row hidden search-alert-row">
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+          <div class="alert alert-danger" role="alert">
+            Please enter some text
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

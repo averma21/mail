@@ -1,0 +1,28 @@
+.search-bg {
+  background-image: url("/static/images/Shimla_Train_1920x1080.jpg");
+  background-size: cover;
+}
+
+.navbar a {
+  color: #ffffff;
+}
+
+.search-box-container {
+  margin-top: 100px;
+}
+
+.search-logo-box {
+  text-align: right;
+}
+
+.search-btn .fa {
+  font-size: 1.5em;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-item.active {
+  border-bottom: 2px solid #ffffff;
+}
